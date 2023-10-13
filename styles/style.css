@@ -1,0 +1,25 @@
+.form-wrap {
+  border: 1px solid #000;
+  padding: 25px;
+  border-radius: 15px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.input-block {
+  display: block;
+}
+.input-block span {
+  display: inline-block;
+  min-width: 150px;
+  text-align: right;
+}
+.input-block input {
+  width: 60%;
+}
+.text-input {
+  padding: 0.3em 0.6em;
+}
+/* text input focus busenai pakeisti outline spalva i blue */
+/* uzdeti kad vardas butu min 4 simboliai  */
+/* jei yra maziau tai input fonas butu rausvas */

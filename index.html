@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User form validation</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>User form validation</h1>
+      <h2>name: James</h2>
+      <h2>lname: Bond</h2>
+
+      <div class="form-wrap">
+        <form autocomplete="on">
+          <!-- <div class="input-block">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" />
+          </div> -->
+
+          <label class="input-block">
+            <span>Your Name:</span>
+            <input
+              class="text-input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name" />
+          </label>
+
+          <button>Pateikti</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
