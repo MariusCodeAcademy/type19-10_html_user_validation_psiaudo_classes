@@ -19,7 +19,42 @@
 }
 .text-input {
   padding: 0.3em 0.6em;
+  border-radius: 4px;
+  border: 1px solid gray;
 }
-/* text input focus busenai pakeisti outline spalva i blue */
-/* uzdeti kad vardas butu min 4 simboliai  */
-/* jei yra maziau tai input fonas butu rausvas */
+.text-input:focus-visible {
+  outline: 2px solid blue;
+  border-color: transparent;
+  /* background-color: #ececec; */
+}
+.text-input:invalid {
+  /* background-color: rgb(255, 173, 158);
+  outline: 2px solid red;
+  color: white; */
+}
+
+.errror {
+  border: 1px solid tomato;
+  padding: 0.2em 0.4em;
+  font-size: 14px;
+  color: red;
+  display: none;
+}
+.text-input:invalid + .errror {
+  display: block;
+}
+
+.text-input.number:out-of-range {
+  outline-color: red;
+  border-color: red;
+}
+
+.text-input.number:in-range {
+  outline-color: green;
+  border-color: green;
+  border-width: 2px;
+}
+
+.text-input.number:required {
+  background-color: yellow;
+}
